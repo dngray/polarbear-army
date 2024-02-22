@@ -1,0 +1,4 @@
+version: STSv1
+mode: enforce
+mx: disroot.org
+max_age: 10368000
