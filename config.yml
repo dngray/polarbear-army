@@ -31,6 +31,9 @@ params:
   homeInfoParams:
     Title: Hi
     Content: Can be Info, links, about...
+  assets:
+    favicon: "/favicon.svg"
+    favicon192x192:  "/favicon-192x192.png"
 
   socialIcons: # optional
     - name: "<platform>"
