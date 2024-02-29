@@ -1,0 +1,48 @@
+{{- $192png := partialCached "cache-bust.html" "/favicon192.png" "favicon192.png" }}
+{{- $512png := partialCached "cache-bust.html" "/favicon512.png" "favicon512.png" }}
+{{- $1024svg := partialCached "cache-bust.html" "/favicon.svg" "/favicon.svg" }}
+{{- $maskablesvg := partial "cache-bust.html" "/maskable_android.svg" }}
+{{- $monochromesvg := partial "cache-bust.html" "/monochrome.svg" }}
+{
+	"name": "{{site.Title}}",
+	"short_name": "polarbear.army",
+	"description": "{{ .Site.Params.Description }}",
+	"lang": "en-US",
+	"display": "minimal-ui",
+	"theme_color": "#191919",
+	"background_color": "#191919",
+	"scope": "/",
+	"start_url": "/",
+	"icons": [
+		{
+			"src": "{{ $192png.Permalink }}",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "any"
+		},
+		{
+			"src": "{{ $512png.Permalink }}",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "any"
+		},
+		{
+			"src": "{{ $1024svg.Permalink }}",
+			"sizes": "1024x1024 512x512 384x384 192x192 180x180 152x152 112x112 56x56",
+			"type": "image/svg+xml",
+			"purpose": "any"
+		},
+		{
+			"src": "{{ $maskablesvg.Permalink }}",
+			"sizes": "1024x1024 512x512 384x384 192x192 180x180 152x152",
+			"type": "image/svg+xml",
+			"purpose": "maskable"
+		},
+		{
+			"src": "{{ $monochromesvg.Permalink }}",
+			"sizes": "1024x1024 512x512 384x384 192x192 180x180 152x152",
+			"type": "image/svg+xml",
+			"purpose": "monochrome"
+		}
+	]
+}
