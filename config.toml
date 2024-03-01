@@ -1,0 +1,27 @@
+baseURL = "https://polarbear.army"
+theme = 'hugo-bearblog'
+title = "Polarbear Army"
+author = "Daniel Gray"
+copyright = "Copyright © 2024, Daniel Gray"
+languageCode = "en-US"
+timeZone = "UTC"
+enableRobotsTXT = false
+
+disableKinds = ["taxonomy"]
+ignoreErrors = ["error-disable-taxonomy"]
+[permalinks]
+  blog = "/:slug/"
+  tags = "/blog/:slug"
+
+[params]
+  description = "Polar bears best"
+  title = "Polarbear Army"
+  favicon = "/favicon.svg"
+  dateFormat = "2006-01-02"
+
+[markup]
+    [markup.highlight]
+      style = "nord"
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            hardWraps = true
