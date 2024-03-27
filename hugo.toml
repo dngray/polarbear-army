@@ -1,0 +1,53 @@
+baseURL = "https://polarbear.army"
+title = "Polarbear Army"
+author = "Daniel Gray"
+copyright = "Copyright © 2024, Daniel Gray"
+languageCode = "en-US"
+timeZone = "UTC"
+enableRobotsTXT = false
+
+# Generate "Bearblog"-like URLs !only!, see https://bearblog.dev/.
+disableKinds = ["taxonomy"]
+ignoreErrors = ["error-disable-taxonomy"]
+
+[permalinks]
+  blog = "/:slug/"
+  tags = "/blog/:slug"
+
+[outputs]
+  rss = ['rss']
+
+[params]
+  description = "Polar bears best"
+  title = "Polarbear Army"
+  favicon = "/favicon.svg"
+  dateFormat = "2006-01-02"
+  hideMadeWithLine = true
+  [params.hugomods]
+    [params.hugomods.images]
+      modern_format = 'webp'
+
+[markup]
+  [markup.highlight]
+    style = "nord"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      hardWraps = true
+
+[module]
+  [[module.imports]]
+    path = 'github.com/janraasch/hugo-bearblog'
+  [[module.imports]]
+    path = 'github.com/hugomods/images'
+
+[[menu.main]]
+identifier = "RSS"
+name = "RSS"
+title = "RSS"
+url = "/index.xml"
+
+[[menu.main]]
+identifier = "Contact"
+name = "Contact"
+title = "Contact"
+url = "/contact/"
