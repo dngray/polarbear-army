@@ -1,12 +1,11 @@
 baseURL = "https://polarbear.army"
 title = "Polarbear Army"
-author = "Daniel Gray"
 copyright = "Copyright © 2024, Daniel Gray"
-languageCode = "en-US"
+locale = "en-US"
 timeZone = "UTC"
 enableRobotsTXT = false
 
-# Generate "Bearblog"-like URLs !only!, see https://bearblog.dev/.
+# Generate "Bearblog"-like URLs !only!, see https://bearblog.dev.
 disableKinds = ["taxonomy"]
 ignoreErrors = ["error-disable-taxonomy"]
 
@@ -23,6 +22,7 @@ ignoreErrors = ["error-disable-taxonomy"]
   favicon = "/favicon.svg"
   dateFormat = "2006-01-02"
   hideMadeWithLine = true
+  author = "Daniel Gray"
   [params.hugomods]
     [params.hugomods.images]
       modern_format = 'webp'
