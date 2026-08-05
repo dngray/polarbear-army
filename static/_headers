@@ -1,0 +1,14 @@
+/*
+  X-Content-Type-Options: nosniff
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  X-Frame-Options: DENY
+  X-XSS-Protection: 0
+  Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; script-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none';
+  Permissions-Policy: accelerometer=(), camera=(), geolocation=(), microphone=(), payment=(), usb=()
+  Cross-Origin-Embedder-Policy: require-corp
+  Cross-Origin-Resource-Policy: same-origin
+  Cross-Origin-Opener-Policy: same-origin
+  Referrer-Policy: strict-origin-when-cross-origin
+
+/.well-known/mta-sts.txt
+  Content-Type: text/plain; charset=utf-8
